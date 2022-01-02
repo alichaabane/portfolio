@@ -1,2 +1,11 @@
-# portfolio
-a beautiful portfolio created using reactJS and tailwind CSS
+Run
+
+```
+    yarn install
+```
+
+tailwind
+
+```
+    yarn run build:css
+```
