@@ -1,15 +1,13 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import content from "../content";
 import {LazyLoadImage} from "react-lazy-load-image-component";
 import Typical from 'react-typical'
 import {Link as ScrollLink} from 'react-scroll';
+import useStartAnimation from "../hook/useStartAnimation";
 
 export default function Header() {
-    const [animated, setAnimated] = useState(false);
-    useEffect(() => {
-        setAnimated(true);
-    }, []);
+    const animated = useStartAnimation();
 
     return (
         <div className="min-h-screen flex items-center justify-center"
@@ -43,7 +41,7 @@ export default function Header() {
                             className="inline-block"
                         />
                     </h1>
-                    <ScrollLink to="technology" smooth={true}>
+                    <ScrollLink to="project" smooth={true}>
                         <button
                             className="
                       animate-float
