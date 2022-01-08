@@ -1,7 +1,7 @@
 import React from 'react';
 import { ScrollToTop } from 'react-simple-scroll-up'
 import content from "../content";
-import {LazyLoadImage} from "react-lazy-load-image-component";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Position from '../hook/useWindowPosition';
 
 export default function Project() {
@@ -10,7 +10,7 @@ export default function Project() {
     return (
         <div
             className="min-h-screen flex justify-center items-center flex-col"
-             id="project" style={{backgroundColor: '#FEFEFE'}}
+            id="project" style={{ backgroundColor: '#FEFEFE' }}
         >
             <ScrollToTop className="mt-20">
                 <span>UP</span>
@@ -56,25 +56,25 @@ const ProjectDetail = () => {
     return (
         <div>
             <h1
-                className={` ${
-                    animated ? '' : 'translate-y-10 opacity-0'
-                }   transform transition duration-2000 inline-block m-4  font-dosis text-xl font-bold`}
+                className={` ${animated ? '' : 'translate-y-10 opacity-0'
+                    }   transform transition duration-2000 inline-block m-4  font-dosis text-xl font-bold`}
             >
                 {content.project.projectName}
             </h1>
             <p
-                className={`${
-                    animated ? '' : 'translate-y-10 opacity-0'
-                }  transform transition duration-2000 inline-block w-11/12 m-4  text-xl font-dosis`}
+                className={`${animated ? '' : 'translate-y-10 opacity-0'
+                    }  transform transition duration-2000 inline-block w-11/12 m-4  text-xl font-dosis`}
             >
                 {content.project.desc}
             </p>
             <button
-                className={`${
-                    animated ? '' : 'translate-y-10 opacity-0'
-                } transform transition duration-2000  px-20 py-3 m-4 bg-black flex justify-center text-white rounded-lg shadow-2xl`}
+                className={`${animated ? '' : 'translate-y-10 opacity-0'
+                    } transform transition duration-2000  px-20 py-3 m-4 bg-black flex justify-center text-white rounded-lg shadow-2xl`}
             >
-                <p className="text-lg"><a href={content.project.website} target="_blank">Website</a></p>
+                <p className="text-lg">
+                    <a href={content.project.website}
+                        rel="noopener noreferrer"
+                        target="_blank">Website</a></p>
             </button>
         </div>
     );
