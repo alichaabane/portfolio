@@ -72,14 +72,9 @@ const ProjectDetail = () => {
             <button
                 className={`${
                     animated ? '' : 'translate-y-10 opacity-0'
-                } transform transition duration-2000  px-20 py-3 m-4 bg-black flex justify-around text-white rounded-lg shadow-2xl`}
+                } transform transition duration-2000  px-20 py-3 m-4 bg-black flex justify-center text-white rounded-lg shadow-2xl`}
             >
-                <img
-                    src="https://timo.engineer/assets/icons/rocket.svg"
-                    alt="rocket"
-                    className="mr-5"
-                />
-                <p className="text-lg">Website</p>
+                <p className="text-lg"><a href={content.project.website} target="_blank">Website</a></p>
             </button>
         </div>
     );
