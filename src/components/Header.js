@@ -15,7 +15,7 @@ export default function Header() {
             <div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center
             justify-between">
                 <div className="w-full md:w-2/5 opacity-75">
-                    <LazyLoadImage src={'/assets/my-image.jpeg'}
+                    <LazyLoadImage src={'/assets/my-image.jpg'}
                                    placeholderSrc={'/assets/logo512.png'}
                                    effect='blur'/>
                 </div>
