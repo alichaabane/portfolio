@@ -52,7 +52,7 @@ export default function Contact() {
                     >
                         {content.contact.socials.map((social, index) => {
                             return (
-                                <a href={social.link} target="_blank">
+                                <a href={social.link} target="_blank" rel="noopener noreferrer">
                                 <LazyLoadImage
                                     effect="blur"
                                     className="m-2"
